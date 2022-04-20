@@ -1,0 +1,24 @@
+{% extends 'main/index.html' %}
+{%block title%} Друзья {%endblock title%}
+
+{%block content%}
+    <div class ="friends">
+    <h3>Ваши друзья:</h3>
+    {%for f in friends%}
+    <p ><a href = "{%   url 'page' f.1 %}">{{ f.0 }}</a></p>
+    {%endfor%}
+    </div>
+
+    <center>
+    <div class = "new">
+        <h3>Добавить нового друга:</h3>
+        <form method="post">
+
+        {%csrf_token%}
+        {{form.user}}<br>
+        <span>{{error}}</span>
+        <button class = "btn btn-success" type="submit">Добавить друга</button>
+    </form>
+    </div>
+    <center>
+{%endblock content%}

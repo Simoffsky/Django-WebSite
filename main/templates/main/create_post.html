@@ -1,0 +1,17 @@
+{%extends 'main/index.html' %}
+
+{%block title%}Создать пост {%endblock title%}
+
+{%block content%}
+
+    <div class="features">
+
+    <form method="post">
+        {%csrf_token%}
+        {{form.title}}<br>
+        {{form.content}}<br>
+        <span>{{error}}</span>
+        <button class = "btn btn-success" type="submit">Добавить пост</button>
+    </form>
+    </div>
+{%endblock content%}

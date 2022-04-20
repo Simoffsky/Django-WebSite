@@ -1,0 +1,19 @@
+{% extends 'main/index.html' %}
+{%block title%}Моя страница {%endblock title%}
+{%block content %}
+{%if not posts%}
+<h1>Посты отсутствуют!</h1>
+{%else %}
+<h1>Посты пользователя {{name}}:</h1>
+{%for p in posts%}
+        <center>
+        <div class = "alert alert-warning">
+            <h3>{{p.title}}</h3>
+            <p>{{p.content}}</p>
+            <span class = "author">{{p.author}}</span>
+            <span class = "time">{{p.time_create}}</span>
+        </div>
+        </center>
+    {%endfor%}
+{%endif%}
+{% endblock content%}

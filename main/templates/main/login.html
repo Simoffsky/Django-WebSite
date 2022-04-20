@@ -1,0 +1,10 @@
+{% extends 'main/index.html' %}
+
+{%block title%} Войти {%endblock title%}
+
+{%block content%}
+    <form method="post">
+    {% csrf_token %}
+    {{form.as_p}}
+    <button type = "submit">Войти</button>
+{%endblock content%}

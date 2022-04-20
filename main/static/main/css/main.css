@@ -1,0 +1,122 @@
+body {
+    background-color: #1A1D1F;
+    color: #f9f9f9;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Suez+One&display=swap');
+
+
+header ul li:hover, header ul a:hover {
+    color:#eb5959!important;
+    transform: scale(1.05);
+}
+
+form p {
+    margin: 0 auto;
+    padding: 10px;
+    width:250px;
+}
+
+main {
+    text-align:center;
+    width:100%;
+    margin-top: 3%;
+}
+
+.alert-warning {
+    text-align:center;
+    clear:both;
+    width:400px;
+    margin: 20px 34%;
+}
+
+.alert-warning p {
+    font-size: 1.2em;
+
+}
+
+.alert-warning .author {
+    font-family: 'Suez-One';
+    font-weight: bold;
+    font-size: 1.3em;
+    float:left;
+    position: relative;
+    bottom: 10px;
+
+}
+
+.alert-warning .time {
+    font-family: 'Suez-One';
+    font-weight: bold;
+    font-size: 1.2em;
+    float:right;
+    position: relative;
+    bottom: 10px;
+
+}
+
+footer {
+    float:bottom;
+    text-align:center;
+}
+
+.features form {
+    margin-left: 32%;
+    width: 500px;
+    margin-top: 50px;
+}
+
+.features {
+    margin-left: 32%;
+    width: 500px;
+    margin-top: 50px;
+}
+
+.request {
+    float: left;
+    text-align: left;
+    margin-left:10%;
+    font-size: 1.2em;
+
+}
+
+.request h3 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+
+.friends {
+    float: right;
+    text-align: right;
+    margin-right:10%;
+    font-size: 1.2em;
+
+
+}
+
+.friends h3 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.friends p {
+    font-size: 1.5em;
+}
+
+.new h3 {
+
+    font-weight: bold;
+}
+.new {
+    font-size: 1.7em;
+}
+
+.no {
+    color:red;
+}
+
+.yes {
+    color:green;
+}
+

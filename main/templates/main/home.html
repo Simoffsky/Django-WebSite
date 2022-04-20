@@ -1,0 +1,15 @@
+{%extends 'main/index.html'%}
+{%block title%} Главная страница {%endblock title%}
+{%block content %}
+{%for p in posts%}
+        <center>
+        <div class = "alert alert-warning">
+            <h3>{{p.title}}</h3>
+            <p>{{p.content}}</p>
+            <span class = "author">{{p.author}}</span>
+            <span class = "time">{{p.time_create}}</span>
+        </div>
+        </center>
+    {%endfor%}
+
+{%endblock content %}
